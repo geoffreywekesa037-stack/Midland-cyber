@@ -1,17 +1,14 @@
-// Midland Cyber - editable service charges
-// Update the values below whenever your prices change.
+// Midland Cyber - current service charges
+// Prices supplied for the Midland Cyber website.
 const CYBER_CHARGES = {
-  photocopyBW: { name: "Black & White Photocopy", unit: "page", price: 5 },
-  photocopyColour: { name: "Colour Photocopy", unit: "page", price: 20 },
-  printingBW: { name: "Black & White Printing", unit: "page", price: 10 },
-  printingColour: { name: "Colour Printing", unit: "page", price: 30 },
-  scanning: { name: "Scanning", unit: "document", price: 20 },
-  binding: { name: "Tape / Spiral Binding", unit: "book", price: 100 },
-  typing: { name: "Typing / Document Preparation", unit: "page", price: 30 },
-  lamination: { name: "Lamination", unit: "document", price: 50 },
-  helb: { name: "HELB Application Assistance", unit: "application", price: 100 },
-  kra: { name: "KRA Services", unit: "service", price: 100 },
-  goodConduct: { name: "Good Conduct Application Assistance", unit: "application", price: 150 }
+  photocopyPrinting: { name: "Photocopying / Printing", unit: "page", price: 10 },
+  scanning: { name: "Scanning", unit: "page", price: 20 },
+  typing: { name: "Typing", unit: "page", price: 30 },
+  lamination: { name: "Lamination", unit: "each", price: 50 },
+  helb: { name: "HELB Application", unit: "application", price: 700 },
+  kraApplication: { name: "KRA Application", unit: "application", price: 250 },
+  kraReturns: { name: "KRA Returns", unit: "service", minPrice: 150, maxPrice: 300, priceLabel: "KSh 150–300" },
+  goodConduct: { name: "Good Conduct", unit: "application", price: 250 }
 };
 
 function formatKES(amount) {
